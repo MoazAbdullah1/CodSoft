@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,29 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Online Quiz Maker</title>
+
+
 </head>
 <body>
-
     <header>
         <nav>
             <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="#create">Create Quiz</a></li>
+                <li><a href="#take">Take Quiz</a></li>
 
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Create Quiz</a></li>
-                <li><a href="#">Take Quiz</a></li>
-                
             </ul>
+
         </nav>
     </header>
 
-    <main>
-
+<main>
+    <section class="Homes">
+        
         <h1>Welcome to the Online Quiz Maker!</h1>
         <p>Choose an option:</p>
         <button id="createQuizBtn">Create Quiz</button>
         <button id="takeQuizBtn">Take Quiz</button>
+    
+    </section>
 
-    </main>
+    <section>
+        <h1>Multiple Choice Questions:</h1>
+    
+    <p>
+        <strong>Question:</strong>
+        Which planet is known as the "Red Planet"?
+        
+    </p>
+    
+    <form >
+        <label>
+            <input type="radio" name="answer" value="A"> A) Earth
+        </label>
+        
+        <br>
+        <label>
+            <input type="radio" name="answer" value="B"> B) Venus
+        </label>
+        
+        <br>
+        <label>
+            <input type="radio" name="answer" value="C"> C) Mars
+        </label>
+        
+        <br>
+        <label>
+            <input type="radio" name="answer" value="D"> D) Jupiter
+        </label>
+        
+        <br><br>
+        
+        <button type="button" onclick="checkAnswer()">Submit Answer</button>
+    </form>
+
+
+
+
+    <div class="packages-card">
+        <div class="cards-content">
+          <img src="Assest/ad.avif" alt="Package 1">
+          <h3>Beach Paradise Getaway</h3>
+          <p>Explore pristine beaches and crystal-clear waters.</p>
+        </div>
+        <div class="cards-footer">
+
+          <button type="button" class="cta-buttons" onclick="checkAnswer()">Submit Answer</button>
+          <!-- <a href="#" class="cta-buttons">Book Now</a> -->
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+</main>
+
+
+    <footer class="footer">
+        <p>&copy; 2023 Quiz Maker. All rights reserved.</p>
+        <p>Find me on: <a href="www.linkedin.com/in/moaz-abdullah" target="_blank">LinkedIn</a></p>
+    </footer>
 
     <script src="script.js" defer></script>
     
