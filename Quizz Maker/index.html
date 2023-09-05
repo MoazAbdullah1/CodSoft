@@ -12,7 +12,8 @@
     <header>
         <nav>
             <ul>
-                <li> <a href="index.html">Home</a></li>
+
+                <li> <a href="#home">Home</a></li>
                 <li><a href="#create">Create Quiz</a></li>
                 <li><a href="#take">Take Quiz</a></li>
 
@@ -24,23 +25,149 @@
 <main>
     <section class="Homes">
         
-        <h1>Welcome to the Online Quiz Maker!</h1>
+        <h1 id="home">Welcome to the Online Quiz Maker!</h1>
         <p>Choose an option:</p>
-        <button id="createQuizBtn">Create Quiz</button>
-        <button id="takeQuizBtn">Take Quiz</button>
+
+        <div class="cards-footer">
+            <a href="#create" > <button id="createQuizBtn" class="b"  >Create Quiz</button> </a>
+        </div>
+
+        <div class="cards-footer">
+           <a href="#take"> <button id="takeQuizBtn" class="b">Take Quiz</button> </a>
+        </div>
     
     </section>
 
-    <section>
-        <h1>Multiple Choice Questions:</h1>
-    
-    <p>
-        <strong>Question:</strong>
-        Which planet is known as the "Red Planet"?
+
+
+
+
+
+
+
+    <section class="Homes">
+
+        <h1 id="take">
+           <<< Take Quiz >>>
+        </h1>
+
+    <div class="packages-card">
+        <div class="cards-content">
+
+            <h1>Multiple Choice Question : 1</h1>
+
+          <!-- <img src="Assest/ad.avif" alt="Package 1"> -->
+          <h3>
+            <strong>Question:</strong>
         
-    </p>
+            Which planet is known as the "Red Planet"?
+        
+        </h3>
+          <p>
+            
+            <form >
+
+            <label>
+                <input type="radio" name="answer" value="A"> A) Earth
+            </label>
+            
+            <br>
+            <label>
+                <input type="radio" name="answer" value="B"> B) Venus
+            </label>
+            
+            <br>
+            <label>
+                <input type="radio" name="answer" value="C"> C) Mars
+            </label>
+            
+            <br>
+            <label>
+                <input type="radio" name="answer" value="D"> D) Jupiter
+            </label>
+            
+            <br><br>
+            
+        </form>
     
-    <form >
+    </p>
+        </div>
+
+        <div class="cards-footer">
+
+          <button type="button" class="cta-buttons" onclick="checkAnswer()">Submit Answer</button>
+          <!-- <a href="#" class="cta-buttons">Book Now</a> -->
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="packages-card">
+        <div class="cards-content">
+
+
+          <h1>Multiple Choice Question : 2</h1>
+    
+        <h3>
+            <strong>
+                Question:
+            </strong>
+            
+            What is the largest planet in our solar system?
+        
+        </h3>
+
+        <p>
+
+        <form>
+            <label>
+                <input type="radio" name="answer2" value="A"> A) Earth
+            </label><br>
+            <label>
+                <input type="radio" name="answer2" value="B"> B) Venus
+            </label><br>
+            <label>
+                <input type="radio" name="answer2" value="C"> C) Jupiter
+            </label><br>
+            <label>
+                <input type="radio" name="answer2" value="D"> D) Mars
+            </label><br><br>
+        
+            <!-- <button type="button" onclick="checkAnswer(2)">Submit Answer</button> -->
+        </form>
+
+    </p>
+</div>
+
+    <div class="cards-footer">
+
+        <button type="button" class="cta-buttons" onclick="checkAnswer()">Submit Answer</button>
+        <!-- <a href="#" class="cta-buttons">Book Now</a> -->
+      </div>
+      </div>
+
+
+
+
+
+      <div class="packages-card">
+        <div class="cards-content">
+
+            <h1>Multiple Choice Question : 3</h1>
+
+      <h3>
+        <strong>Question:</strong>
+    
+        Which planet is known as the "Red Planet"?
+
+    </h3>
+
+      <p>
+        
+        <form >
         <label>
             <input type="radio" name="answer" value="A"> A) Earth
         </label>
@@ -62,24 +189,144 @@
         
         <br><br>
         
-        <button type="button" onclick="checkAnswer()">Submit Answer</button>
+        <!-- <button type="button" onclick="checkAnswer()">Submit Answer</button> -->
     </form>
 
+</p>
+    </div>
+    <div class="cards-footer">
+
+      <button type="button" class="cta-buttons" onclick="checkAnswer()">Submit Answer</button>
+      <!-- <a href="#" class="cta-buttons">Book Now</a> -->
+    </div>
+  </div>
 
 
 
-    <div class="packages-card">
-        <div class="cards-content">
-          <img src="Assest/ad.avif" alt="Package 1">
-          <h3>Beach Paradise Getaway</h3>
-          <p>Explore pristine beaches and crystal-clear waters.</p>
+
+
+    </section>
+
+
+
+
+
+
+
+
+    <section class="q">
+
+        <h1 id="create" class="h"> <<< Create Quiz >>> </h1>
+
+        <h2>Create Your Own Quiz:</h2>
+
+
+
+
+        <div class="packages-card">
+            <div class="cards-content">
+    
+                <h1>Make your Own Multiple Choice Questions</h1>
+
+                <p>Write Your question Here>>></p>
+    
+                <form>
+                    <input type="text" class="input-box" placeholder="Write Your Question:">
+                    <br><br>
+                    <button type="button" class="b">Submit Question</button>
+                </form>
+    
+          <p>
+            Create Options >>>
+            <form >
+            <label>
+                <input type="text" class="input-box" placeholder="Option 1:">
+            </label>
+            
+            <br>
+            <label>
+                <input type="text" class="input-box" placeholder="Option 2:">
+            </label>
+            
+            <br>
+            <label>
+                <input type="text" class="input-box" placeholder="Option 3:">
+            </label>
+            
+            <br>
+            <label>
+                <input type="text" class="input-box" placeholder="Option 4:">
+            </label>
+            
+            <br><br>
+            
+        </form>
+    
+    </p>
         </div>
         <div class="cards-footer">
+    
+          <button type="button" class="cta-buttons" onclick="checkAnswer()">Submit Options</button>
+    
 
-          <button type="button" class="cta-buttons" onclick="checkAnswer()">Submit Answer</button>
-          <!-- <a href="#" class="cta-buttons">Book Now</a> -->
         </div>
       </div>
+
+
+
+      <div class="packages-card">
+        <div class="cards-content">
+
+            <h1>Make your Own Multiple Choice Questions</h1>
+
+            <p>Write Your question Here>>></p>
+
+            <form>
+                <input type="text" class="input-box" placeholder="Write Your Question:">
+                <br><br>
+                <button type="button" class="b">Submit Question</button>
+            </form>
+
+      <p>
+        Create Options >>>
+        <form >
+        <label>
+            <input type="text" class="input-box" placeholder="Option 1:">
+        </label>
+        
+        <br>
+        <label>
+            <input type="text" class="input-box" placeholder="Option 2:">
+        </label>
+        
+        <br>
+        <label>
+            <input type="text" class="input-box" placeholder="Option 3:">
+        </label>
+        
+        <br>
+        <label>
+            <input type="text" class="input-box" placeholder="Option 4:">
+        </label>
+        
+        <br><br>
+        
+    </form>
+
+</p>
+    </div>
+    <div class="cards-footer">
+
+      <button type="button" class="cta-buttons" onclick="checkAnswer()">Submit Options</button>
+
+
+    </div>
+  </div>
+
+
+
+
+
 
     </section>
 
@@ -99,3 +346,4 @@
 </body>
 
 </html>
+
