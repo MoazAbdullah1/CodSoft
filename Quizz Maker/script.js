@@ -50,11 +50,16 @@ function checkAnswer() {
                 correctAnswer: "C"
             },
             {
-                question: "What is the capital of France?",
-                options: ["Berlin", "Madrid", "Paris", "Rome"],
+                question: "What is the largest planet in our solar system?",
+                options: ["Earth", "Venus", "Jupiter", "Mars"],
                 correctAnswer: "C"
             },
             // Add more questions here
+            {
+                question: "What is the largest planet in our solar system?",
+                options: ["Earth", "Venus", "Jupiter", "Mars"],
+                correctAnswer: "C"
+            },
         ];
 
         function showQuestion() {
