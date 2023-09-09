@@ -62,6 +62,8 @@ function checkAnswer() {
             },
         ];
 
+        
+
         function showQuestion() {
             if (currentQuestion < questions.length) {
                 var questionObj = questions[currentQuestion];
